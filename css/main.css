@@ -117,8 +117,7 @@
 }
 
 .hamburger__container {
-  visibility: hidden;
-  display: block;
+  display: none;
   position: absolute;
   margin-top: 27px;
   width: 700px;
@@ -127,7 +126,7 @@
 }
 
 .hamburger__container.hamburger__container--active {
-  visibility: visible;
+  display: block;
 }
 
 .hamburger__row {
