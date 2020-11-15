@@ -145,6 +145,10 @@ background-color: transparent;
 font-style: normal;
 font-weight: bold;
 font-size: 17px;
+line-height: 24px;
+
+
+letter-spacing: 0.04em;
 text-transform: uppercase;
 padding-top: 40px;
 
@@ -162,6 +166,10 @@ a{
   padding: 14px 16px;
   background: $red;
   color: $white;
+  font-family: 'Century Gothic';
+  font-style: normal;
+font-weight: bold;
+font-size: 14px;
   &:hover {
     background: $white;
     color:$red;
@@ -171,14 +179,24 @@ a{
 }
 .phone-header {
   text-decoration: none;
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 21px;
+&:hover{
+color: $red;
+text-decoration: none;
+}
 }
 .order-phone {
-  font-size: 12px;
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
   color: $red;
+
 }
-.hero {
-  width: 1920px;
-  height: 768px;
-  background: url("/image/heade.png") center center no-repeat;
-}
+
 

@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("CenturyGothic-Italic.eot");
+  src: local("Century Gothic Italic"), local("CenturyGothic-Italic"), url("CenturyGothic-Italic.eot?#iefix") format("embedded-opentype"), url("CenturyGothic-Italic.woff") format("woff"), url("CenturyGothic-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("CenturyGothic.eot");
+  src: local("Century Gothic"), local("CenturyGothic"), url("CenturyGothic.eot?#iefix") format("embedded-opentype"), url("CenturyGothic.woff") format("woff"), url("CenturyGothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("CenturyGothic-Bold.eot");
+  src: local("Century Gothic Bold"), local("CenturyGothic-Bold"), url("CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("CenturyGothic-Bold.woff") format("woff"), url("CenturyGothic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("CenturyGothic-BoldItalic.eot");
+  src: local("Century Gothic Bold Italic"), local("CenturyGothic-BoldItalic"), url("CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("CenturyGothic-BoldItalic.woff") format("woff"), url("CenturyGothic-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
 .header__line {
   background: #000000;
   width: 100%;
@@ -144,6 +172,8 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   padding-top: 40px;
 }
@@ -161,6 +191,10 @@ a {
   padding: 14px 16px;
   background: #ed1c29;
   color: #ffffff;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
 }
 .btn:hover {
   background: #ffffff;
@@ -170,10 +204,23 @@ a {
 
 .phone-header {
   text-decoration: none;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+}
+.phone-header:hover {
+  color: #ed1c29;
+  text-decoration: none;
 }
 
 .order-phone {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
   font-size: 12px;
+  line-height: 15px;
   color: #ed1c29;
 }
 
