@@ -83,10 +83,13 @@
   font-size: 15px;
 }
 
-.nav__item {
+.nav__item .nav__item--link {
   text-decoration: none;
 }
-.nav__item--status::before {
+.nav__item .nav__item--link:hover {
+  color: #ed1c29;
+}
+.nav__item .nav__item--link--status::before {
   content: "";
   display: inline-block;
   background: url("/image/group.png");

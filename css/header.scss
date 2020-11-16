@@ -58,6 +58,16 @@
 }
 .nav__item {
   text-decoration: none;
+  
+    &:hover{
+      color: $red;
+    }
+  .nav__item--link {
+      text-decoration: none;
+      
+        &:hover{
+          color: $red;
+        }
   &--status::before {
     content: "";
     display: inline-block;
@@ -127,6 +137,7 @@ background-color: transparent;
   background-color: $white;
   
 }
+
 .hamburger__container.hamburger__container--active{
  display: block;
 }
