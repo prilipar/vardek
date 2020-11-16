@@ -83,13 +83,20 @@
   font-size: 15px;
 }
 
-.nav__item .nav__item--link {
+.nav__item {
   text-decoration: none;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
 }
-.nav__item .nav__item--link:hover {
+.nav__item:hover {
   color: #ed1c29;
 }
-.nav__item .nav__item--link--status::before {
+.nav__item--link:hover {
+  color: #ed1c29;
+}
+.nav__item--status::before {
   content: "";
   display: inline-block;
   background: url("/image/group.png");

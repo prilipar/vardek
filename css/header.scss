@@ -45,7 +45,6 @@
   }
 }
 
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -58,16 +57,17 @@
 }
 .nav__item {
   text-decoration: none;
-  
-    &:hover{
-      color: $red;
-    }
-  .nav__item--link {
-      text-decoration: none;
-      
-        &:hover{
-          color: $red;
-        }
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  &:hover{
+    color: $red;
+  }
+  &--link:hover {
+    color: $red;
+  }
+
   &--status::before {
     content: "";
     display: inline-block;
@@ -79,18 +79,17 @@
     text-align: center;
   }
 }
-.hamburger-wraper{
+.hamburger-wraper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 50px;
-  
 }
 
 .hamburger__menu {
   position: relative;
- 
+
   height: 3px;
   width: 12px;
   background-color: $black;
@@ -101,7 +100,7 @@
     width: 32px;
     top: -10px;
     background-color: $black;
-    transition: transform 0.2s ease-in , top 0.2s linear 0.2s;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
   }
   &::after {
     position: absolute;
@@ -113,101 +112,91 @@
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
   }
 }
-.hamburger__menu.hamburger__menu--active{
-background-color: transparent;
-&::before{
-  transform: rotate(45deg);
-  top:0;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-}
-&::after{
-  transform: rotate(-45deg);
-  width: 32px;
-  top:0;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-}
+.hamburger__menu.hamburger__menu--active {
+  background-color: transparent;
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    width: 32px;
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
 }
 
-.hamburger__container{
- display: none;
+.hamburger__container {
+  display: none;
   position: absolute;
   margin-top: 27px;
   width: 700px;
   height: 400px;
   background-color: $white;
-  
 }
 
-.hamburger__container.hamburger__container--active{
- display: block;
+.hamburger__container.hamburger__container--active {
+  display: block;
 }
 
-.hamburger__row{
+.hamburger__row {
   display: flex;
-
 }
-.hamburger__left{
+.hamburger__left {
   margin-right: 115px;
 }
-.hamburger__item{
+.hamburger__item {
   list-style: none;
   color: $black;
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
 
-
-letter-spacing: 0.04em;
-text-transform: uppercase;
-padding-top: 40px;
-
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 40px;
 }
-a{
+a {
   color: $black;
-  
 }
-.hamburger__item a:hover{
-    color: $red;
-    text-decoration: none;
-  
+.hamburger__item a:hover {
+  color: $red;
+  text-decoration: none;
 }
-.btn{
+.btn {
   padding: 14px 16px;
   background: $red;
   color: $white;
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
   font-style: normal;
-font-weight: bold;
-font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
   &:hover {
     background: $white;
-    color:$red;
+    color: $red;
     border: 1px solid $red;
-    
   }
 }
 .phone-header {
   text-decoration: none;
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 21px;
-&:hover{
-color: $red;
-text-decoration: none;
-}
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
 }
 .order-phone {
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
   color: $red;
-
 }
-
-
