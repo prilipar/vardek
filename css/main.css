@@ -238,4 +238,73 @@ a {
   width: 1920px;
   height: 768px;
   background: url("/image/heade.png") center center no-repeat;
+  margin-bottom: 100px;
+}
+
+.about-wraper {
+  margin-bottom: 100px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.about__item {
+  border: 1px solid #939598;
+  width: 206px;
+  height: 249px;
+  margin-right: 22px;
+}
+.about__item:last-child {
+  margin-right: 0;
+}
+
+.title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-size: 15px;
+}
+.item-box__img {
+  width: 41px;
+  height: 45px;
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+.item-box__title {
+  font-weight: bold;
+}
+.item-box__desc {
+  font-weight: normal;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.preview .title {
+  width: 941px;
 }
