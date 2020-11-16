@@ -198,18 +198,31 @@ a {
 }
 
 .btn {
-  padding: 14px 16px;
-  background: #ed1c29;
-  color: #ffffff;
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  text-transform: uppercase;
 }
-.btn:hover {
+.btn--red {
+  background: #ed1c29;
+  color: #ffffff;
+  padding: 14px 16px;
+}
+.btn--red:hover {
   background: #ffffff;
   color: #ed1c29;
   border: 1px solid #ed1c29;
+}
+.btn--black {
+  background: #000000;
+  color: #ffffff;
+  padding: 17px 56px;
+  border: 1px solid #000000;
+}
+.btn--black:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 .phone-header {
@@ -235,7 +248,7 @@ a {
 }
 
 .hero {
-  width: 1920px;
+  width: 100%;
   height: 768px;
   background: url("/image/heade.png") center center no-repeat;
   margin-bottom: 100px;
@@ -298,13 +311,71 @@ a {
   font-weight: normal;
 }
 
+.preview-wraper {
+  margin-bottom: 100px;
+}
+
 .preview {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-self: center;
   align-items: center;
+}
+.preview__list {
+  margin-bottom: 40px;
+}
+.preview__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 14px 14px 0 14px;
+  text-transform: uppercase;
+}
+.preview__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 14px 14px 21px 14px;
+}
+.preview__list {
+  display: flex;
+  flex-direction: column;
+}
+.preview__list-one {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.preview__list-two {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.preview__item {
+  width: 300px;
+  height: 30px;
+}
+.preview__item-one {
+  border: 1px solid #939598;
+  margin-right: 22px;
+}
+.preview__item-one:last-child {
+  margin-right: 0;
+}
+.preview__item-two {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #939598;
+  margin-right: 22px;
+}
+.preview__item-two:last-child {
+  margin-right: 0;
 }
 
 .preview .title {
   width: 941px;
+  text-align: center;
 }

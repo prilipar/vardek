@@ -167,19 +167,34 @@ a {
   text-decoration: none;
 }
 .btn {
-  padding: 14px 16px;
-  background: $red;
-  color: $white;
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  &:hover {
+  text-transform: uppercase;
+  &--red{
+    background: $red;
+  color: $white;
+  padding: 14px 16px;
+   &:hover {
     background: $white;
     color: $red;
     border: 1px solid $red;
   }
 }
+ &--black{
+  background: $black;
+  color: $white;
+  padding: 17px 56px;
+  border: 1px solid $black;
+&:hover{
+  background:  $white;
+  color:$black;
+}
+}
+}
+
+
 .phone-header {
   text-decoration: none;
   font-family: Century Gothic;
