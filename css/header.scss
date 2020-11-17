@@ -1,3 +1,18 @@
+.button-home {
+  position: fixed;
+  background: $white;
+width: 48px;
+height: 48px;
+border: 1px solid $black;
+right: 10%;
+top: 10%;
+
+z-index: $z-fixed-button;
+transition:1s;
+}
+.button-home-img{
+  padding: 21px 18px 20px 18px;
+}
 .header__line {
   background: $black;
   width: 100%;

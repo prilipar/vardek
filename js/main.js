@@ -4,9 +4,4 @@ document.querySelector(".hamburger-wraper").onclick = function(){
   
  }
 
-
-
-
-
-
-
+ 
