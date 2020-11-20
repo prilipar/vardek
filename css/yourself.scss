@@ -123,7 +123,13 @@ height: 96px;
 .coll__img{
   width: 72px;
   height: 16px;
-  background: url(../image/arrow.png) no-repeat;
+  background: url("../image/arrow.png") no-repeat;
+  &:hover{
+    background: url("../image/news/arrow-red.png");
+  width: 152px;
+  height: 16px;
+  transition: all 500ms ease; 
+  }
  
 }
 

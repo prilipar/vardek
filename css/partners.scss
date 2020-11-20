@@ -1,0 +1,27 @@
+.partners-wraper{
+  margin-bottom: 100px;
+}
+.partners{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    &__list{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+     
+
+    }
+    &__item{
+      width: 320px;
+height: 150px;
+border: 1px solid $border;
+margin-right: 22px;
+&:last-child{
+  margin-right: 0px;
+}
+
+    }
+   
+
+}

@@ -1,0 +1,111 @@
+.title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.news-wraper{
+  margin-bottom: 100px;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  &__item {
+    width: 434px;
+    margin-right: 22px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__preview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    &-one {
+      background: url("../image/news/one.png");
+      width: 434px;
+      height: 350px;
+    }
+    &-two {
+      background: url("../image/news/two.png");
+      width: 434px;
+      height: 350px;
+    }
+    &-three {
+      background: url("../image/news/three.png");
+      width: 434px;
+      height: 350px;
+    }
+
+    &-hesh {
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 18px;
+      color: $white;
+      background: $red;
+      padding: 4px;
+      margin: 0 5px 10px 0;
+      &:first-child {
+        margin-left: 10px;
+      }
+    }
+  }
+  &__datetime {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: $gray;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+
+      background: url("../image/news/clock.png") no-repeat;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      margin: -1px auto;
+    }
+  }
+  &__title {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__content{
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+margin-bottom: 24px;
+
+  }
+}
+.news__img{
+  background: url("../image/news/arrow.png");
+  width: 72px;
+  height: 16px;
+  &:hover{
+    background: url("../image/news/arrow-red.png");
+  width: 152px;
+  height: 16px;
+  transition: all 500ms ease; 
+  }
+}
