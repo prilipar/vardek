@@ -21,6 +21,9 @@
   &__item {
     width: 434px;
     margin-right: 22px;
+    display: flex;
+    flex-direction: column;
+   
     &:last-child {
       margin-right: 0px;
     }
@@ -88,6 +91,7 @@
     font-size: 17px;
     line-height: 24px;
     text-transform: uppercase;
+    
   }
   &__content{
     font-family: Open Sans;
@@ -96,12 +100,15 @@ font-weight: normal;
 font-size: 14px;
 margin-bottom: 24px;
 
+
   }
 }
 .news__img{
   background: url("../image/news/arrow.png");
   width: 72px;
   height: 16px;
+ margin-top: auto;
+  
   &:hover{
     background: url("../image/news/arrow-red.png");
   width: 152px;

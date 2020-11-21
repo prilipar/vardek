@@ -339,6 +339,10 @@ a {
 .item-box__title {
   font-weight: bold;
 }
+.item-box__title:hover {
+  color: #ed1c29;
+  cursor: pointer;
+}
 .item-box__desc {
   font-weight: normal;
 }
@@ -413,9 +417,94 @@ a {
   text-align: center;
 }
 
-.promo {
+.promo-wraper {
   margin-bottom: 100px;
+  position: relative;
+  height: 500px;
+  position: relative;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  position: absolute;
+  color: #ffffff;
+  margin-left: 22%;
+}
+.promo-text__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.promo-text__desc {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-bottom: 50px;
+}
+
+.promo-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #ed1c29;
+  position: relative;
+}
+.promo-btn::before {
+  content: "";
+  display: inline-block;
+  background: linear-gradient(0deg, #ed1c29 100%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  animation: promo-btn 1.8s linear infinite;
+}
+.promo-btn::after {
+  content: "";
+  width: 140px;
+  height: 140px;
+  display: inline-block;
+  background: linear-gradient(0deg, #ed1c29 100%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50%;
+  opacity: 0.1;
+  position: absolute;
+  top: -33px;
+  left: -33px;
+  animation: promo-btn 1.8s linear infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes promo-btn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.promo-btn__img {
+  padding: 22px 0 0 5px;
 }
 
 .favorit-wraper {
@@ -698,6 +787,74 @@ a {
   transition: all 500ms ease;
 }
 
+.adress-wraper {
+  margin-bottom: 100px;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adress__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1300px;
+}
+.adress__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.adress__item {
+  width: 320px;
+  height: 320px;
+  margin-right: 22px;
+  margin-bottom: 22px;
+  border: 1px solid #DCE5E7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 14px 14px 14px;
+}
+.adress__item:hover {
+  border: 1px solid #ed1c29;
+}
+
+.adress__map {
+  width: 662px;
+  height: 662px;
+  border: 1px solid firebrick;
+}
+
+.item__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.item__phone, .item__mail, .item__adress {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.item__adress-title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+}
+
 .title {
   font-family: Century Gothic;
   font-style: normal;
@@ -724,6 +881,8 @@ a {
 .news__item {
   width: 434px;
   margin-right: 22px;
+  display: flex;
+  flex-direction: column;
 }
 .news__item:last-child {
   margin-right: 0px;
@@ -801,6 +960,7 @@ a {
   background: url("../image/news/arrow.png");
   width: 72px;
   height: 16px;
+  margin-top: auto;
 }
 .news__img:hover {
   background: url("../image/news/arrow-red.png");
@@ -828,7 +988,16 @@ a {
   height: 150px;
   border: 1px solid #DCE5E7;
   margin-right: 22px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 .partners__item:last-child {
   margin-right: 0px;
+}
+.partners__line {
+  width: 100%;
+  border: 1px solid #F1F2F2;
+  margin-bottom: 50px;
 }

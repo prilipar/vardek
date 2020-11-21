@@ -53,6 +53,11 @@ font-size: 15px;
 &__title{
   font-weight: bold;
 
+  &:hover{
+    color: $red;
+    cursor: pointer;
+  }
+
 }
 &__desc{
   font-weight: normal;

@@ -1,0 +1,69 @@
+.adress-wraper{
+  margin-bottom: 100px;
+}
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+&__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1300px;
+}
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 700px;
+
+    
+  }
+  &__item {
+    width: 320px;
+height: 320px;
+margin-right: 22px;
+margin-bottom: 22px;
+    border: 1px solid $border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 14px 14px 14px;
+    &:hover{
+      border: 1px solid $red;
+    
+    }
+  }
+}
+.adress__map{
+  width: 662px;
+height: 662px;
+  border: 1px solid firebrick;
+}
+.item{
+  &__title{
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+}
+&__phone, &__mail, &__adress{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
+&__adress-title{
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+}
+}
