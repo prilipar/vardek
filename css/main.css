@@ -857,6 +857,32 @@ a {
 #map {
   width: 100%;
   height: 100%;
+  display: block;
+  position: relative;
+}
+
+.btn-map {
+  text-transform: uppercase;
+  background: #000000;
+  color: #ffffff;
+  padding: 17px 52px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  margin-bottom: 40px;
+  margin-left: 228px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+.btn-map:hover {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .title {
@@ -1004,4 +1030,118 @@ a {
   width: 100%;
   border: 1px solid #F1F2F2;
   margin-bottom: 50px;
+}
+
+.footer-wraper {
+  background: #000000;
+  height: 506px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 506px;
+  align-items: center;
+}
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 70px;
+  width: 100%;
+}
+.footer__list {
+  text-transform: uppercase;
+  list-style: none;
+  color: #939598;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+.footer__feedback {
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 350px;
+}
+
+.btn-footer {
+  background: #ed1c29;
+  width: 72px;
+  height: 48px;
+  padding: 16px 28px;
+  display: inline;
+  margin-left: 20px;
+}
+
+.input-footer {
+  display: inline;
+  width: 228px;
+  height: 52px;
+}
+
+.btn-img {
+  width: 7px;
+  height: 12px;
+}
+
+.feedback__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.icon__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  text-align: center;
+  align-items: baseline;
+  height: 40px;
+}
+
+.copyright {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #939598;
+  text-align: center;
+  width: 887px;
+  padding-bottom: 32px;
+}
+
+.footer__nav-title {
+  color: #ffffff;
+}
+
+.feedback__social {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.icon__item--vk {
+  background: url("../image/social/vk.png") no-repeat;
+}
+
+.icon__item {
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+}
+
+.icon__item--youtube {
+  background: url("../image/social/youtube.png") no-repeat;
+}
+
+.icon__item--insta {
+  background: url("../image/social/instagram.png") no-repeat;
 }
