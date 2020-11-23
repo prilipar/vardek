@@ -1192,6 +1192,9 @@ a {
 .icon-item {
   margin-right: 30px;
 }
+.icon-item:hover {
+  fill: #ed1c29;
+}
 
 .vk-icon {
   fill: #ffffff;
@@ -1205,7 +1208,7 @@ a {
   height: 9px;
 }
 
-.youtube-icon {
+.insta-icon {
   fill: #ffffff;
   width: 16px;
   height: 16px;

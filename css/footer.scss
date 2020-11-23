@@ -146,18 +146,22 @@ color: $black;
 }
 .icon-item{
   margin-right: 30px;
+  &:hover{
+    fill: $red;
+  }
 }
 .vk-icon{
   fill: $white;
   width: 16px;
   height: 9px;
+  
 }
 .youtube-icon{
   fill: $white;
   width: 16px;
   height: 9px;
 }
-.youtube-icon{
+.insta-icon{
   fill: $white;
   width: 16px;
   height: 16px;
