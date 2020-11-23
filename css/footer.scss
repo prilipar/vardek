@@ -7,71 +7,83 @@
   flex-direction: column;
   justify-content: space-between;
   height: 506px;
-  
+
   align-items: center;
-  
-  
-  &__content{
+
+  &__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 70px;
-      width: 100%;
+    width: 100%;
   }
   &__list {
     text-transform: uppercase;
     list-style: none;
-    color: $gray;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
+    
   }
-  &__feedback{
+  &__item{
+    margin-top: 18px;
+  }
+  &__feedback {
     color: $white;
     text-transform: uppercase;
     width: 350px;
-
+  }
+  &__art{
+    margin-top: 26px;
   }
 }
-.btn-footer{
+.item-link{
+  color: $gray;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  &:hover{
+    color: $white;
+    text-decoration: none;
+  }
+}
+.btn-footer {
   background: $red;
   width: 72px;
-height: 48px;
-padding: 16px 28px;
-display: inline;
-margin-left: 20px;
-
+  height: 48px;
+  padding: 16px 28px;
+  display: inline;
+  margin-left: 20px;
+  &:hover{
+    background: $grizzly;
+    border: 1px solid $red;
+  }
 }
-.input-footer{
+.input-footer {
   display: inline;
   width: 228px;
-height: 52px;
+  height: 52px;
 }
-.btn-img{
+.btn-img {
   width: 7px;
   height: 12px;
-  
 }
-.feedback__title{
+.feedback__title {
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 24px;
-letter-spacing: 0.04em;
-margin-bottom: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
 }
-.icon__list{
+.icon__list {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: start;
   text-align: center;
-  align-items: baseline;
+  align-items: center;
   height: 40px;
-
 }
 .copyright {
   font-family: Open Sans;
@@ -84,28 +96,69 @@ margin-bottom: 12px;
   width: 887px;
   padding-bottom: 32px;
 }
-.footer__nav-title{
+.footer__nav-title {
   color: $white;
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 24px;
+text-transform: uppercase;
+
+
+letter-spacing: 0.04em;
 }
-.feedback__social{
+.feedback__social {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.icon__item--vk{
+.icon__item--vk {
   background: url("../image/social/vk.png") no-repeat;
-  
 }
-.icon__item{
+.icon__item {
   width: 16px;
   height: 16px;
   margin-right: 20px;
-  
-
 }
-.icon__item--youtube{
+.icon__item--youtube {
   background: url("../image/social/youtube.png") no-repeat;
-
 }
-.icon__item--insta{
+.icon__item--insta {
   background: url("../image/social/instagram.png") no-repeat;
+}
+.btn-footer-white{
+  background: $black;
+  padding: 17px 35px;
+  border: 1px solid $white;
+  color: $white;
+  margin-top: 50px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.04em;
+&:hover{
+background: $white;
+color: $black;
+}
+}
+.icon-item{
+  margin-right: 30px;
+}
+.vk-icon{
+  fill: $white;
+  width: 16px;
+  height: 9px;
+}
+.youtube-icon{
+  fill: $white;
+  width: 16px;
+  height: 9px;
+}
+.youtube-icon{
+  fill: $white;
+  width: 16px;
+  height: 16px;
 }

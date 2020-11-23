@@ -1054,6 +1054,20 @@ a {
 .footer__list {
   text-transform: uppercase;
   list-style: none;
+}
+.footer__item {
+  margin-top: 18px;
+}
+.footer__feedback {
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 350px;
+}
+.footer__art {
+  margin-top: 26px;
+}
+
+.item-link {
   color: #939598;
   font-family: Open Sans;
   font-style: normal;
@@ -1061,10 +1075,9 @@ a {
   font-size: 12px;
   line-height: 16px;
 }
-.footer__feedback {
+.item-link:hover {
   color: #ffffff;
-  text-transform: uppercase;
-  width: 350px;
+  text-decoration: none;
 }
 
 .btn-footer {
@@ -1074,6 +1087,10 @@ a {
   padding: 16px 28px;
   display: inline;
   margin-left: 20px;
+}
+.btn-footer:hover {
+  background: #F1F2F2;
+  border: 1px solid #ed1c29;
 }
 
 .input-footer {
@@ -1103,7 +1120,7 @@ a {
   flex-direction: row;
   justify-content: start;
   text-align: center;
-  align-items: baseline;
+  align-items: center;
   height: 40px;
 }
 
@@ -1121,6 +1138,13 @@ a {
 
 .footer__nav-title {
   color: #ffffff;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .feedback__social {
@@ -1144,4 +1168,45 @@ a {
 
 .icon__item--insta {
   background: url("../image/social/instagram.png") no-repeat;
+}
+
+.btn-footer-white {
+  background: #000000;
+  padding: 17px 35px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.btn-footer-white:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.icon-item {
+  margin-right: 30px;
+}
+
+.vk-icon {
+  fill: #ffffff;
+  width: 16px;
+  height: 9px;
+}
+
+.youtube-icon {
+  fill: #ffffff;
+  width: 16px;
+  height: 9px;
+}
+
+.youtube-icon {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
 }
