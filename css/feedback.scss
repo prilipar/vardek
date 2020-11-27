@@ -1,48 +1,50 @@
-.promo-wraper {
-  margin-bottom: 100px;
-
-  height: 500px;
-  position: relative;
- 
+.feedback-wraper{
+  width: 100%;
+  height: 593px;
 }
-.promo {
+
+.feedback{
   display: flex;
-  flex-direction: column;
-  background: url("/image/foto.png");
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 450px;
-  color: $white;
- 
-
-
-  &-text__title {
-    font-family: Century Gothic;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
+  flex-direction: row;
+  height: 100%;
+  &__desc{
+    width: 410px;
   }
-  &-text__desc {
-    font-family: Century Gothic;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding-bottom: 50px;
+
+  &__content{
+    width: 890px;
+height: 593px;
+position: relative;
+    background: url("/image/feedback.png") no-repeat;
   }
+
 }
-.promo-btn {
+.desc__title{
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 42px;
+
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+.desc__des{
+  font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 24px;
+
+text-transform: uppercase;
+}
+.feedback-btn {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   background: $red;
+  margin-left: 48%;
+  margin-top: 20%;
   position: relative;
 
   &::before {
@@ -86,6 +88,19 @@
   }
 
 }
-.promo-btn__img {
-  padding: 22px 0 0 5px;
+.feedback-btn__img {
+  padding: 22px 0 0 28px;
+}
+.feedback__btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: start;
+  transform: rotate(-90deg);
+  height: 8px;
+  width: 100px;
+}
+.btn__massege{
+  margin-right: 40px;
+  
 }

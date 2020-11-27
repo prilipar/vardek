@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: 506px;
-
   align-items: center;
 
   &__content {
@@ -20,9 +19,8 @@
   &__list {
     text-transform: uppercase;
     list-style: none;
-    
   }
-  &__item{
+  &__item {
     margin-top: 18px;
   }
   &__feedback {
@@ -30,18 +28,18 @@
     text-transform: uppercase;
     width: 350px;
   }
-  &__art{
+  &__art {
     margin-top: 26px;
   }
 }
-.item-link{
+.item-link {
   color: $gray;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  &:hover{
+  &:hover {
     color: $white;
     text-decoration: none;
   }
@@ -53,7 +51,7 @@
   padding: 16px 28px;
   display: inline;
   margin-left: 20px;
-  &:hover{
+  &:hover {
     background: $grizzly;
     border: 1px solid $red;
   }
@@ -99,70 +97,70 @@
 .footer__nav-title {
   color: $white;
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 24px;
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
 
-
-letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 }
 .feedback__social {
   margin-top: 50px;
   margin-bottom: 20px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
-.icon__item--vk {
-  background: url("../image/social/vk.png") no-repeat;
-}
+
 .icon__item {
   width: 16px;
   height: 16px;
   margin-right: 20px;
 }
-.icon__item--youtube {
-  background: url("../image/social/youtube.png") no-repeat;
-}
-.icon__item--insta {
-  background: url("../image/social/instagram.png") no-repeat;
-}
-.btn-footer-white{
+
+.btn-footer-white {
   background: $black;
   padding: 17px 35px;
   border: 1px solid $white;
   color: $white;
   margin-top: 50px;
   font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 15px;
-line-height: 18px;
-text-align: center;
-letter-spacing: 0.04em;
-&:hover{
-background: $white;
-color: $black;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  &:hover {
+    background: $white;
+    color: $black;
+  }
 }
-}
-.icon-item{
+.icon-item {
   margin-right: 30px;
-  &:hover{
+  &:hover {
     fill: $red;
   }
 }
-.vk-icon{
-  fill: $white;
-  width: 16px;
-  height: 9px;
-  
-}
-.youtube-icon{
+.vk-icon {
   fill: $white;
   width: 16px;
   height: 9px;
 }
-.insta-icon{
+.youtube-icon {
+  fill: $white;
+  width: 16px;
+  height: 9px;
+}
+.insta-icon {
   fill: $white;
   width: 16px;
   height: 16px;
+}
+.feedback__link{
+  text-decoration: none;
 }
