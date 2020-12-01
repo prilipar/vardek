@@ -1,42 +1,48 @@
-.feedback-wraper{
+.feedback-wraper {
   width: 100%;
-  height: 593px;
+  height: 421px;
+  margin-bottom: 100px;
 }
 
-.feedback{
+.feedback {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  &__desc{
+  height: 421px;
+   &__desc {
     width: 410px;
-  }
+    margin-top: 40px;
+    
+    }
 
-  &__content{
+  &__content {
     width: 890px;
-height: 593px;
-position: relative;
+    height: 450px;
+    
     background: url("/image/feedback.png") no-repeat;
+   
+       
   }
-
 }
-.desc__title{
+.desc__title {
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 42px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  
 
-letter-spacing: 0.04em;
-text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
-.desc__des{
+.desc__des {
   font-family: Century Gothic;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 24px;
-
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 40px;
+width: 450px;
+  text-transform: uppercase;
 }
 .feedback-btn {
   width: 72px;
@@ -46,7 +52,6 @@ text-transform: uppercase;
   margin-left: 48%;
   margin-top: 20%;
   position: relative;
-
   &::before {
     content: "";
     display: inline-block;
@@ -72,35 +77,59 @@ text-transform: uppercase;
     top: -33px;
     left: -33px;
     animation: promo-btn 1.8s linear infinite;
-    animation-delay: .3s;
+    animation-delay: 0.3s;
   }
 }
-@keyframes promo-btn{
-  0%{
+@keyframes promo-btn {
+  0% {
     transform: scale(0.2);
     opacity: 0.1;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
-  100%{
+  100% {
     transform: scale(1);
   }
-
 }
 .feedback-btn__img {
   padding: 22px 0 0 28px;
 }
-.feedback__btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: start;
-  transform: rotate(-90deg);
-  height: 8px;
-  width: 100px;
-}
-.btn__massege{
-  margin-right: 40px;
+.feedback__btn {
   
+  
+  writing-mode:vertical-rl;
+  transform:scale(-1);
+  width:52px;
+  margin-right:23px;
+ 
+}
+.btn__massege {
+  margin-right: 40px;
+  display: inline-block;
+  
+}
+.feedback__video{
+  display: inline-block;
+}
+
+.btn-next{
+  position: absolute;
+  display: inline-block;
+  width: 72px;
+height: 72px;
+background: $white;
+padding: 20px 0 0 29px;
+    margin-left: 815px;
+
+}
+.btn-prev{
+  position: absolute;
+  display: inline-block;
+  width: 72px;
+height: 72px;
+background: $white;
+padding: 20px 0 0 29px;
+    margin-left: 743px;
+
 }

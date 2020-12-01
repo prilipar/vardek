@@ -656,21 +656,22 @@ a {
 
 .feedback-wraper {
   width: 100%;
-  height: 593px;
+  height: 421px;
+  margin-bottom: 100px;
 }
 
 .feedback {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: 421px;
 }
 .feedback__desc {
   width: 410px;
+  margin-top: 40px;
 }
 .feedback__content {
   width: 890px;
-  height: 593px;
-  position: relative;
+  height: 450px;
   background: url("/image/feedback.png") no-repeat;
 }
 
@@ -690,6 +691,8 @@ a {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin-top: 40px;
+  width: 450px;
   text-transform: uppercase;
 }
 
@@ -747,17 +750,39 @@ a {
 }
 
 .feedback__btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: start;
-  transform: rotate(-90deg);
-  height: 8px;
-  width: 100px;
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  width: 52px;
+  margin-right: 23px;
 }
 
 .btn__massege {
   margin-right: 40px;
+  display: inline-block;
+}
+
+.feedback__video {
+  display: inline-block;
+}
+
+.btn-next {
+  position: absolute;
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  padding: 20px 0 0 29px;
+  margin-left: 815px;
+}
+
+.btn-prev {
+  position: absolute;
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  padding: 20px 0 0 29px;
+  margin-left: 743px;
 }
 
 .yourself-wraper {
