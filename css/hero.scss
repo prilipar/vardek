@@ -28,9 +28,21 @@
   color: $white;
   border: 1px solid $white;
   display: block;
-  width: 250px;
-  height: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
   padding: 20px 24px;
+  &:hover{
+    background: $red;
+    border: 1px solid $red;
+  }
 }
 .slider__title{
   font-family: Century Gothic;

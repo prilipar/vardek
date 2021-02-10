@@ -64,3 +64,55 @@ font-size: 15px;
 
 }
 }
+@media (max-width: 1024px){
+ 
+  .title{
+    font-size: 14px;
+  }
+ .about__list{
+   flex-direction: row;
+   flex-wrap: wrap;
+
+   
+
+ }
+ .about__item{
+   margin-bottom: 20px;
+   margin-right: 0;
+ }
+}
+
+@media (max-width: 768px){
+  .title{
+    font-size: 14px;
+  }
+ .about__list{
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: -20px;
+
+ }
+ .about__item{
+   margin-bottom: 20px;
+   margin-right: 20px;
+ }
+}
+
+@media (max-width: 320px), (max-width: 480px){
+  .title{
+    font-size: 14px;
+  }
+ .about__list{
+   flex-direction: column;
+   justify-content: center;
+
+ }
+ .about__item{
+   margin-bottom: 20px;
+   margin-right: 20px;
+ }
+}
+
+
+
