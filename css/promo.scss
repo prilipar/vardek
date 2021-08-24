@@ -44,6 +44,7 @@
   border-radius: 50%;
   background: $red;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";

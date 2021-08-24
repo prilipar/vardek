@@ -41,6 +41,7 @@
     border: 1px solid $white;
     padding: 17px 27px;
     width: 206px;
+    cursor: pointer;
     &:hover {
       border: 1px solid $black;
       color: $black;
@@ -124,11 +125,13 @@ height: 96px;
   width: 72px;
   height: 16px;
   background: url("../image/arrow.png") no-repeat;
+  cursor: pointer;
   &:hover{
     background: url("../image/news/arrow-red.png");
   width: 152px;
   height: 16px;
   transition: all 500ms ease; 
+  
   }
  
 }
