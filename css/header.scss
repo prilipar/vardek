@@ -56,7 +56,7 @@ transition:1s;
   &__user::before {
     content: "";
     display: inline-block;
-    background: url("../image/user.png");
+    background: url("/image/user.png");
     width: 14px;
     height: 14px;
     margin-right: 10px;
@@ -99,7 +99,7 @@ transition:1s;
   &--status::before {
     content: "";
     display: inline-block;
-    background: url("../image/group.png");
+    background: url("/image/group.png");
     margin-right: 10px;
 
     width: 14px;
