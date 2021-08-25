@@ -1,21 +1,21 @@
-.promo-wraper {
+
+.promo {
+  
+ 
+  color: $white;
+ 
   margin-bottom: 100px;
 
   height: 500px;
-  position: relative;
- 
-}
-.promo {
+&__block{
+  background: url("../image/foto.png");
   display: flex;
   flex-direction: column;
-  background: url("../image/foto.png");
+   height: 450px;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 450px;
-  color: $white;
- 
-
+}
 
   &-text__title {
     font-family: Century Gothic;
